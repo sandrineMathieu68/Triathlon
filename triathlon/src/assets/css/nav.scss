@@ -1,0 +1,117 @@
+@import "color.scss";
+nav {
+    z-index: 9999;
+    position: relative;
+    .gauche {
+        height: 75px;
+        width: 25%;
+        margin-left: -27px;
+        background-color: #FEC722;
+        position: fixed;
+        -webkit-transform: skew(-30deg);
+        -moz-transform: skew(-30deg);
+        -o-transform: skew(-30deg);
+        -webkit-box-shadow: 10px 7px 37px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 7px 37px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 7px 37px 0px rgba(0, 0, 0, 0.75);
+    }
+    .bande {
+        position: fixed;
+        top: 12px;
+        width: 100vw;
+        height: 50px;
+        background-color: $color_nav;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        h1 {
+            width: 20%;
+            text-align: center;
+            @include police(3,14);
+        }
+        button {
+            background-color: transparent;
+            font-size: 40px;
+            color: white;
+            border: 0px solid transparent;
+            margin-right: 10px;
+            display: none;
+        }
+        .menu {
+            display: flex;
+            list-style-type: none;
+            padding-right: 50px;
+            li {
+                margin: 0;
+                padding: 0;
+                margin-left: 10px;
+                ul{
+                    display:flex;
+                    list-style-type:none;
+                    margin:0;
+                    padding:0;
+                    display:none;
+                    flex-direction:column;
+                    position:fixed;
+                    li{
+                        margin:0;
+                        padding:0;
+                        background-color:black;
+                        padding-top:5px;
+                        padding-bottom:5px;
+                        padding-left:10px;
+                        padding-right:10px;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover {
+                    color: yellow;
+                }  
+            }
+            li:hover ul{
+                display:flex;
+            }
+        }
+    }
+}
+.menu_tel{
+    display:none;
+    position:fixed;
+    background-color:#ffc722;
+    height:100vh;
+    width:0%;
+    transition:all 500ms;
+    z-index: 100000;
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        .bande{
+            h1{
+                width: 80vw;
+            }
+            button{
+                display:flex;
+            }
+            .menu{
+                display:none;
+            }
+        }
+        .gauche{
+            width: 80vw;
+        }
+    }
+    .menu_tel{
+        ul{
+            display:flex;
+            list-style-type:none;
+            flex-direction:column;
+        }
+    }
+
+}

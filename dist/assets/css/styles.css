@@ -1,0 +1,223 @@
+body {
+    font-family: 'raleway', Cambria, Cochin, Georgia, Times, serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #ffeb3b;
+    background-color: #ffeb3b;
+}
+
+@font-face {
+    font-family: 'raleway_bold';
+
+    src: url('../../../fonts/Raleway-Black.ttf');
+}
+
+@font-face {
+    font-family: 'raleway';
+
+    src: url('../../../fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'raleway_semi';
+
+    src: url('../../../fonts/Raleway-SemiBold.ttf');
+}
+
+nav {
+    position: relative;
+    z-index: 9999;
+}
+
+nav .gauche {
+    position: fixed;
+    width: 25%;
+    height: 75px;
+    margin-left: -27px;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    background-color: #fec722;
+    -webkit-box-shadow: 10px 7px 37px 0 rgba(0, 0, 0, .75);
+    box-shadow: 10px 7px 37px 0 rgba(0, 0, 0, .75);
+}
+
+nav .bande {
+    position: fixed;
+    top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+    height: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+nav .bande h1 {
+    font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;
+    font-size: 14px;
+    width: 20%;
+    text-align: center;
+}
+
+nav .bande button {
+    font-size: 40px;
+    display: none;
+    margin-right: 10px;
+    color: white;
+    border: 0 solid transparent;
+    background-color: transparent;
+}
+
+nav .bande .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 50px;
+    list-style-type: none;
+}
+
+nav .bande .menu li {
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+nav .bande .menu li ul {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav .bande .menu li ul li {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background-color: black;
+}
+
+nav .bande .menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .bande .menu li a:hover {
+    color: yellow;
+}
+
+nav .bande .menu li:hover ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.menu_tel {
+    position: fixed;
+    z-index: 100000;
+    display: none;
+    width: 0;
+    height: 100vh;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    background-color: #ffc722;
+}
+
+@media screen and (max-width: 768px) {
+    nav .bande h1 {
+        width: 80vw;
+    }
+
+    nav .bande button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    nav .bande .menu {
+        display: none;
+    }
+
+    nav .gauche {
+        width: 80vw;
+    }
+
+    .menu_tel ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        list-style-type: none;
+    }
+}
+
+header {
+    height: 60vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover 100%;
+}
+
+header .carousel {
+    width: 100%;
+    height: 100%;
+}
+
+header .carousel .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+header .carousel .carousel-inner .carousel-item {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 100vh;
+    }
+
+    header .carousel {
+        height: 100vh;
+    }
+
+    header .carousel .carousel-inner {
+        width: 100%;
+        height: 100%;
+    }
+
+    header .carousel .carousel-inner .carousel-item {
+        width: 100%;
+        height: 100%;
+        background-position: center top;
+    }
+}
