@@ -1,0 +1,563 @@
+body {
+    font-family: 'raleway', Cambria, Cochin, Georgia, Times, serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #c0c1c1;
+    background-color: #c0c1c1;
+}
+
+@font-face {
+    font-family: 'raleway_bold';
+
+    src: url('../../../fonts/Raleway-Black.ttf');
+}
+
+@font-face {
+    font-family: 'raleway';
+
+    src: url('../../../fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'raleway_semi';
+
+    src: url('../../../fonts/Raleway-SemiBold.ttf');
+}
+
+nav {
+    position: relative;
+    z-index: 9999;
+}
+
+nav .gauche {
+    position: fixed;
+    width: 29%;
+    height: 110px;
+    margin-left: -27px;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    background-color: #d50024;
+    -webkit-box-shadow: 10px 7px 37px 0 rgba(0, 0, 0, .75);
+    box-shadow: 10px 7px 37px 0 rgba(0, 0, 0, .75);
+}
+
+nav .bande {
+    position: fixed;
+    top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+    height: 70px;
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+nav .bande h1 {
+    font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;
+    font-size: 20px;
+    width: 30%;
+    margin-bottom: 0;
+    margin-left: 30px;
+    color: #1b2336;
+}
+
+nav .bande h1 span {
+    color: #fff;
+}
+
+nav .bande button {
+    font-size: 40px;
+    display: none;
+    margin-right: 10px;
+    color: white;
+    border: 0 solid transparent;
+    background-color: transparent;
+}
+
+nav .bande .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+    padding-right: 50px;
+    list-style-type: none;
+}
+
+nav .bande .menu li {
+    margin-right: 50px;
+    margin-bottom: 0;
+}
+
+nav .bande .menu li ul {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav .bande .menu li ul li {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background-color: black;
+}
+
+nav .bande .menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .bande .menu li a:hover {
+    color: #8b0000;
+}
+
+nav .bande .menu li:hover ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.menu_tel {
+    position: fixed;
+    z-index: 100000;
+    display: none;
+    width: 0;
+    height: 100vh;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    background-color: #ffc722;
+}
+
+@media screen and (max-width: 1200px) {
+    nav .bande h1 {
+        font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;
+        font-size: 16px;
+        width: 20%;
+    }
+
+    nav .bande .menu li {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav .bande h1 {
+        font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;
+        font-size: 16px;
+        width: 80vw;
+        text-align: center;
+    }
+
+    nav .bande button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    nav .bande .menu {
+        display: none;
+    }
+
+    nav .gauche {
+        width: 80vw;
+    }
+
+    .menu_tel ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        list-style-type: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav .bande h1 {
+        font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;
+        font-size: 17px;
+        width: 80vw;
+        margin-left: 30px;
+        text-align: left;
+    }
+
+    nav .bande button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    nav .bande .menu {
+        display: none;
+    }
+
+    nav .gauche {
+        width: 80vw;
+    }
+
+    .menu_tel ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        list-style-type: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    nav .bande h1 {
+        font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;
+        font-size: 14px;
+        width: 80vw;
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    nav .bande button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    nav .bande .menu {
+        display: none;
+    }
+
+    nav .gauche {
+        width: 80vw;
+    }
+
+    .menu_tel ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        list-style-type: none;
+    }
+}
+
+.discipline {
+    font-family: 'raleway';
+    margin-top: -150px;
+}
+
+.discipline .one {
+    text-decoration: none;
+    color: black;
+    background-color: #c0c1c1;
+    background-color: transparent;
+    background-image: url(../../../img/home_tab_left_active.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.discipline .one .entete {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-left: 10px solid red;
+    border-radius: 50%;
+    background-image: url(../../../img/nage1.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.discipline .one h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+    color: red;
+}
+
+.discipline .one p {
+    font-size: 20px;
+    margin-top: 25px;
+    color: #1b2336;
+}
+
+.discipline .one:hover {
+    text-decoration: none;
+    background: rgba(213, 0, 36, .8);
+}
+
+.discipline .one:hover h2 {
+    color: white;
+}
+
+.discipline .two {
+    text-decoration: none;
+    color: black;
+    background-color: #c0c1c1;
+    background-color: transparent;
+    background-image: url(../../../img/home_tab_center_active.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.discipline .two .entete {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 50%;
+    background-image: url(../../../img/jogger.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.discipline .two h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+    color: #1b2336;
+}
+
+.discipline .two p {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.discipline .two:hover {
+    text-decoration: none;
+    background: #fff;
+}
+
+.discipline .tree {
+    text-decoration: none;
+    color: black;
+    background-color: #c0c1c1;
+    background-color: transparent;
+    background-image: url(../../../img/home_tab_right_active.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.discipline .tree .entete {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 50%;
+    background-image: url(../../../img/vel.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.discipline .tree h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+    color: red;
+}
+
+.discipline .tree p {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #1b2336;
+}
+
+.discipline .tree:hover {
+    text-decoration: none;
+    background: rgba(213, 0, 36, .8);
+}
+
+.discipline .tree:hover h2 {
+    color: white;
+}
+
+.explication {
+    border: 15px solid rgba(213, 0, 36, .8);
+    border-top: none;
+}
+
+.explication .eximag {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+}
+
+.explication .extext {
+    text-align: center;
+    color: black;
+    background-color: #fff;
+}
+
+.explication .extext h2 {
+    margin-top: 40px;
+}
+
+.explication .extext p {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .discipline .one .entete {
+        width: 90px;
+        height: 90px;
+        margin-top: 70px;
+    }
+
+    .discipline .one h2 {
+        font-size: 30px;
+    }
+
+    .discipline .one p {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .discipline .two .entete {
+        width: 90px;
+        height: 90px;
+        margin-top: 57px;
+    }
+
+    .discipline .two h2 {
+        font-size: 30px;
+    }
+
+    .discipline .two p {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .discipline .tree .entete {
+        width: 90px;
+        height: 90px;
+        margin-top: 70px;
+    }
+
+    .discipline .tree h2 {
+        font-size: 30px;
+    }
+
+    .discipline .tree p {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .discipline .one .entete {
+        width: 80px;
+        height: 80px;
+    }
+
+    .discipline .one h2 {
+        font-size: 30px;
+    }
+
+    .discipline .one p {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .discipline .two .entete {
+        width: 80px;
+        height: 80px;
+    }
+
+    .discipline .two h2 {
+        font-size: 30px;
+    }
+
+    .discipline .two p {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .discipline .tree .entete {
+        width: 80px;
+        height: 80px;
+    }
+
+    .discipline .tree h2 {
+        font-size: 30px;
+    }
+
+    .discipline .tree p {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+}
+
+header {
+    height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover 100%;
+}
+
+header .carousel {
+    width: 100%;
+    height: 100%;
+}
+
+header .carousel .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+header .carousel .carousel-inner .carousel-item {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 100vh;
+    }
+
+    header .carousel {
+        height: 100vh;
+    }
+
+    header .carousel .carousel-inner {
+        width: 100%;
+        height: 100%;
+    }
+
+    header .carousel .carousel-inner .carousel-item {
+        width: 100%;
+        height: 100%;
+        background-position: center top;
+    }
+}

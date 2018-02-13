@@ -1,0 +1,42 @@
+// ##############################
+// ######### Couleur ############
+// ##############################
+
+$principale: rgba(12, 12, 12, 0.863);
+$secondaire: #c0c1c1;
+$tersiaire: black;
+$texte-principale: white;
+$texte-secondaire: red;
+$texte-tersiaire: green;
+$color_nav:rgba(0, 0, 0, 0.6);
+
+@mixin  couleur($background, $color){
+    @if $background == 0{}
+    @else if $background == 1{background-color: $principale;}
+    @else if $background == 2{background-color: $secondaire;}
+    @else if $background == 3{background-color: $tersiaire;}
+    @if $color == 0{}
+    @else if $color == 1{color: $principale;}
+    @else if $color == 2{color: $secondaire;}
+    @else if $color == 3{color: $tersiaire;}
+}
+
+@mixin police($police, $size){
+    @if $police == 0{}
+    @else if $police == 1{font-family: 'raleway', Cambria, Cochin, Georgia, Times, serif;}
+    @else if $police == 2{font-family: 'raleway_semi', Cambria, Cochin, Georgia, Times, serif;}
+    @else if $police == 3{font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;}
+    @if $size == 0{}
+    @else if $size > 0 {font-size: $size + px;}
+}
+
+@mixin margin($top,$bottom,$left,$right){
+    @if $top == 0{}
+    @else if $top > 0{margin-top:$top;}  
+    @if $bottom == 0{}
+    @else if $bottom > 0{margin-bottom:$bottom;}
+    @if $left == 0{}
+    @else if $left > 0{margin-left:$left;}
+    @if $right == 0{}
+    @else if $right > 0{margin-right:$top;}      
+}

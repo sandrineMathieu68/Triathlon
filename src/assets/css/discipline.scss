@@ -1,0 +1,260 @@
+@import "color.scss";
+
+.discipline{
+font-family: 'raleway';
+margin-top: -150px;
+
+	.one{
+		background-image:url(../../../img/home_tab_left_active.png);
+	    background-position:center top;
+	    background-size: cover ;
+	    @include couleur(2,3);
+	    background-repeat:no-repeat;
+	    text-decoration: none;
+	    background-color: transparent;
+
+	    
+		.entete{
+			margin: 0px auto;
+			width: 110px;
+			height: 110px;
+			border-radius: 50%;
+			margin-top: 50px;
+			background-image:url(../../../img/nage1.jpg);
+			background-position:center top;
+			background-size: cover ;
+			border-left: 10px solid red;
+		}
+	    	h2{
+	    		text-align: center;
+	    		margin-top: 40px;
+	    		color:red;
+	    		font-size: 30px;
+	    	}
+	    	p{
+	    		margin-top: 25px;
+	    		font-size: 20px;
+	    		color:#1b2336;
+	    	}
+
+	}
+	.one:hover{
+		background:rgba(213, 0, 36, 0.8);
+		text-decoration: none;
+		h2{
+			color: white;
+		}
+	}
+	.two{
+		background-image:url(../../../img/home_tab_center_active.png);
+	    background-position:center top;
+	    background-size: cover ;
+	    @include couleur(2,3);
+	    background-repeat:no-repeat;
+	    text-decoration: none;
+	    background-color: transparent;
+	    
+		.entete{
+			margin: 0px auto;
+			width: 110px;
+			height: 110px;
+			border-radius: 50%;
+			margin-top: 50px;
+			background-image:url(../../../img/jogger.jpg);
+			background-position:center top;
+			background-size: cover ;
+		}    	
+	    	h2{
+	    		text-align: center;
+	    		margin-top: 40px;
+	    		color:#1b2336;
+	    		font-size: 30px;
+	    	}
+	    	p{
+	    		margin-top: 20px;
+	    		font-size: 22px;
+	    	}
+	}
+	.two:hover{
+		background:#fff;
+		text-decoration: none;
+
+	}
+
+	.tree{
+		background-image:url(../../../img/home_tab_right_active.png);
+	    background-position:center top;
+	    background-size: cover ;
+	    @include couleur(2,3);
+	    background-repeat:no-repeat;
+	    text-decoration: none;
+	    background-color: transparent;
+	    
+		.entete{
+			margin: 0px auto;
+			width: 110px;
+			height: 110px;
+			border-radius: 50%;
+			margin-top: 50px;
+			background-image:url(../../../img/vel.jpg);
+			background-position:center top;
+			background-size: cover ;
+		}
+    	
+	    	h2{
+	    		text-align: center;
+	    		margin-top: 40px;
+	    		color:red;
+	    		font-size: 30px;
+	    	}
+	    	p{
+	    		margin-top: 20px;
+	    		font-size: 22px;
+	    		color:#1b2336;
+	    	}
+
+	}
+	.tree:hover{
+		background:rgba(213, 0, 36, 0.8);
+		text-decoration: none;
+		h2{
+			color: white;
+		}
+
+	}
+}
+
+.explication{
+
+	border: 15px solid rgba(213, 0, 36, 0.8);
+	border-top: none;
+	.eximag{
+		background-color: #fff;
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+	.extext{
+		color: black;
+		background-color: #fff;
+		text-align: center;
+
+		h2{
+			margin-top: 40px;
+			
+		}
+		p{
+			margin-top: 20px;
+		}
+	}
+}
+@media screen and (max-width: 1200px) {	
+
+}
+@media screen and (max-width: 992px) {
+
+.discipline{
+	.one{
+	    
+		.entete{
+			width: 90px;
+			height: 90px;
+			margin-top: 70px;
+		}
+	    	h2{
+				font-size: 30px;
+	    	}
+	    	p{
+	    		margin-top: 25px;
+	    		font-size: 15px;
+	    	}
+	}
+
+	.two{    
+		.entete{
+			width: 90px;
+			height: 90px;
+			margin-top: 57px;
+
+		}    	
+	    	h2{
+				font-size: 30px;
+	    	}
+	    	p{
+	    		margin-top: 25px;
+	    		font-size: 15px;
+	    	}
+	}
+
+
+	.tree{	    
+		.entete{
+			width: 90px;
+			height: 90px;
+			margin-top: 70px;
+		}    	
+	    	h2{
+
+	    		font-size: 30px;
+	    	}
+		    p{
+		    	margin-top: 25px;
+	    		font-size: 15px;
+	    	}    	
+	}
+
+}
+}
+@media screen and (max-width: 768px) {
+
+.discipline{
+	.one{
+	    
+		.entete{
+			width: 80px;
+			height: 80px;
+		}
+	    	h2{
+				font-size: 30px;
+	    	}
+	    	p{
+	    		margin-top: 25px;
+	    		font-size: 15px;
+	    	}
+	}
+
+	.two{    
+		.entete{
+			width: 80px;
+			height: 80px;
+		}    	
+	    	h2{
+				font-size: 30px;
+	    	}
+	    	p{
+	    		margin-top: 25px;
+	    		font-size: 15px;
+	    	}
+	}
+
+
+	.tree{	    
+		.entete{
+			width: 80px;
+			height: 80px;
+		}    	
+	    	h2{
+
+	    		font-size: 30px;
+	    	}
+		    p{
+		    	margin-top: 25px;
+	    		font-size: 15px;
+	    	}    	
+	}
+
+}	
+
+}
+@media screen and (max-width: 576px) {
+
+}
