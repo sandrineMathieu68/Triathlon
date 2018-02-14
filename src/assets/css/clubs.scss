@@ -1,0 +1,101 @@
+@import "color.scss";
+.clubs{
+	margin-top: -3%;
+
+	  background-color: #fff;
+  background-image: -webkit-linear-gradient(150deg, rgba(227, 237, 21, 0.75) 51%, rgba(2, 2, 2, 0.8) 35%);
+  min-height: 400px;
+
+
+
+	.lesclubs{
+		.ou{
+			h2{
+				font-family: 'SFSportsNight';
+				margin-top: 10%;
+				margin-bottom: 10%;
+				text-align: right;
+			}
+			p{
+				margin-left: 10%;
+				margin-right: 15%;
+			}	
+		}
+	}
+
+		.ville{
+			color: #353535;
+			h2{
+				font-family: 'SFSportsNight';
+
+				margin-top: 10%;
+				text-align: left;
+				margin-left: 15%;
+
+			}
+			p{
+				margin-right: 10%;
+				text-align: left;
+				margin-left: 15%;
+				margin-bottom: 7%;
+			}
+			.club{
+				margin-left: 15%;
+				width:  200px;
+				height: 200px;
+
+				a{
+
+				}
+
+
+			}			
+
+		}	
+
+}
+
+@media screen and (max-width: 768px) {	
+
+	.clubs{
+		@include police(3,14);
+		.lesclubs{
+		.ou{
+			h2{
+				font-family: 'SFSportsNight';
+				margin-top: 10%;
+				margin-bottom: 10%;
+				text-align: center;
+			}
+			p{
+				margin-left: 0%;
+				margin-right: 0%;
+				text-align: center;
+			}	
+		}
+	}
+
+		.ville{
+			color: #fff;
+			h2{
+				text-align: right;
+				margin-top: 10%;
+				margin-left: 0%;
+				text-align: center;
+
+
+			}
+			p{
+				margin-right: 0%;
+				text-align: center;
+				@include police(1,12);
+			}
+			.club{
+
+
+			}			
+
+		}
+	}
+
+}

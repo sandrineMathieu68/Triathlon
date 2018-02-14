@@ -1,0 +1,21 @@
+// ###########################
+// ######## Header ###########
+// ###########################
+@import "color.scss";
+header{
+    height:45vh;
+    background-image:url(../../../img/course.jpg);
+    background-position:center top;
+    background-size: cover;
+    @include couleur(3,0);
+    @include margin(0,0,0,0);
+    background-repeat:no-repeat;
+
+}
+
+@media screen and (max-width: 768px) {
+    header{
+    }
+
+
+}

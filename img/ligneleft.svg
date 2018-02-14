@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px"
+	 height="600px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+<g id="Calque_1">
+</g>
+<g id="Calque_2">
+	<image overflow="visible" width="445" height="270" xlink:href="home_tab_left_active.png"  transform="matrix(1 0 0 1 77 165)">
+	</image>
+	<path fill="#EFEF2E" d="M95,252.5"/>
+	<path fill="#F4F3EF" d="M94.834,252.5c0,0,404.75-35.5,406.083-26.5S503,435,503,435H105c-4.668,0-5,0-5,0h-5"/>
+</g>
+<g id="Calque_3">
+	<path fill="#FFFFFF" d="M97.724,251.085"/>
+	<path fill="#E3ED15" d="M95,251v-6c0,0,1.834-5.017,12.167-4.517s-6.5-1.167,64.167-8.5s66.167-6.167,66.167-6.167
+		s-0.167-0.667,4.5-1.167s21-1.667,21.333-1.167s25.667-2.167,26.333-2s18.499-1.5,29.166-2.5s16.834-1,19.667-1s35-2,36.667-2.167
+		s40.334-1.44,40.834-0.94S450.5,215,450.5,215H498c0,0,5-1.851,5,3.816s0,9.184,0,9.184h-0.835H501v-1.184V226l-1.002-0.35
+		l-1.333-0.659L497.498,225H490l-8.002,0.15"/>
+	<path fill="#E3ED15" d="M95,256.333c0,0,42.666-6.667,51.999-8s-49.275-6.102-49.275-6.102"/>
+	<path fill="#E3ED15" d="M210.999,243c0,0-60.929,6.741-64,5.333s-3.071-1.408-3.071-1.408l-8.886-1.162"/>
+</g>
+</svg>

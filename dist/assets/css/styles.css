@@ -1,0 +1,707 @@
+body {
+    font-family: 'raleway', Cambria, Cochin, Georgia, Times, serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #fff;
+}
+
+@font-face {
+    font-family: 'raleway_bold';
+
+    src: url('../../../fonts/Raleway-Black.ttf');
+}
+
+@font-face {
+    font-family: 'raleway';
+
+    src: url('../../../fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'raleway_semi';
+
+    src: url('../../../fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'SFSportsNight';
+
+    src: url('../../../fonts/SFSportsNight.ttf');
+}
+
+@font-face {
+    font-family: 'Merriweather-Light';
+
+    src: url('../../../fonts/Merriweather-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Merriweather-Bold';
+
+    src: url('../../../fonts/Merriweather-Bold.ttf');
+}
+
+nav {
+    position: relative;
+    z-index: 9999;
+}
+
+nav .gauche {
+    position: fixed;
+    width: 29%;
+    height: 110px;
+    margin-left: -27px;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    background-color: rgba(227, 237, 21, .75);
+    -webkit-box-shadow: 10px 7px 37px 0 rgba(0, 0, 0, .75);
+    box-shadow: 10px 7px 37px 0 rgba(0, 0, 0, .75);
+}
+
+nav .bande {
+    position: fixed;
+    top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+    height: 70px;
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+nav .bande h1 {
+    font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;
+    font-size: 20px;
+    width: 30%;
+    margin-bottom: 0;
+    margin-left: 30px;
+    color: #fff;
+}
+
+nav .bande h1 span {
+    color: #fff;
+}
+
+nav .bande button {
+    font-size: 40px;
+    display: none;
+    margin-right: 10px;
+    color: white;
+    border: 0 solid transparent;
+    background-color: transparent;
+}
+
+nav .bande .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+    padding-right: 50px;
+    list-style-type: none;
+}
+
+nav .bande .menu li {
+    margin-right: 50px;
+    margin-bottom: 0;
+}
+
+nav .bande .menu li ul {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav .bande .menu li ul li {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background-color: black;
+}
+
+nav .bande .menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .bande .menu li a:hover {
+    color: rgba(227, 237, 21, .75);
+}
+
+nav .bande .menu li:hover ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.menu_tel {
+    position: fixed;
+    z-index: 100000;
+    display: none;
+    width: 0;
+    height: 100vh;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    background-color: #ffc722;
+}
+
+@media screen and (max-width: 1200px) {
+    nav .bande h1 {
+        font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;
+        font-size: 16px;
+        width: 20%;
+    }
+
+    nav .bande .menu li {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav .bande h1 {
+        font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;
+        font-size: 16px;
+        width: 80vw;
+        text-align: center;
+    }
+
+    nav .bande button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    nav .bande .menu {
+        display: none;
+    }
+
+    nav .gauche {
+        width: 80vw;
+    }
+
+    .menu_tel ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        list-style-type: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav .bande h1 {
+        font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;
+        font-size: 17px;
+        width: 80vw;
+        margin-left: 30px;
+        text-align: left;
+    }
+
+    nav .bande button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    nav .bande .menu {
+        display: none;
+    }
+
+    nav .gauche {
+        width: 80vw;
+    }
+
+    .menu_tel ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        list-style-type: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    nav .bande h1 {
+        font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;
+        font-size: 14px;
+        width: 80vw;
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    nav .bande button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    nav .bande .menu {
+        display: none;
+    }
+
+    nav .gauche {
+        width: 80vw;
+    }
+
+    .menu_tel ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        list-style-type: none;
+    }
+}
+
+.discipline {
+    font-family: 'raleway';
+    margin-top: -450px;
+}
+
+.discipline .one {
+    text-decoration: none;
+    color: white;
+    background-color: #fff;
+    background-color: transparent;
+    background-image: url(../../../img/ligneleft.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover 100%;
+}
+
+.discipline .one .entete {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-left: 10px solid rgba(227, 237, 21, .75);
+    border-radius: 50%;
+    background-image: url(../../../img/nage1.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.discipline .one h2 {
+    font-family: 'Merriweather-Bold';
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+    color: #3f3f3c;
+}
+
+.discipline .one p {
+    font-family: 'Merriweather-Light';
+    font-size: 16px;
+    margin-top: 20px;
+    color: #3f3f3c;
+}
+
+.discipline .one:hover {
+    text-decoration: none;
+    background-color: rgba(227, 237, 21, .5);
+}
+
+.discipline .one:hover h2 {
+    color: white;
+}
+
+.discipline .two {
+    text-decoration: none;
+    color: white;
+    background-color: #fff;
+    background-color: transparent;
+    background-image: url(../../../img/lignecentre.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover 100%;
+}
+
+.discipline .two .entete {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-bottom: 10px solid rgba(227, 237, 21, .75);
+    border-radius: 50%;
+    background-image: url(../../../img/jogger.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.discipline .two h2 {
+    font-family: 'Merriweather-Bold';
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+    color: #3f3f3c;
+}
+
+.discipline .two p {
+    font-family: 'Merriweather-Light';
+    font-size: 16px;
+    margin-top: 20px;
+    color: #3f3f3c;
+}
+
+.discipline .two:hover {
+    text-decoration: none;
+    background-color: rgba(130, 139, 138, .5);
+}
+
+.discipline .tree {
+    text-decoration: none;
+    color: white;
+    background-color: #fff;
+    background-color: transparent;
+    background-image: url(../../../img/lignedroite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover 100%;
+}
+
+.discipline .tree .entete {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-right: 10px solid rgba(227, 237, 21, .75);
+    border-radius: 50%;
+    background-image: url(../../../img/vel.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.discipline .tree h2 {
+    font-family: 'Merriweather-Bold';
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+    color: #3f3f3c;
+}
+
+.discipline .tree p {
+    font-family: 'Merriweather-Light';
+    font-size: 16px;
+    margin-top: 20px;
+    color: #3f3f3c;
+}
+
+.discipline .tree:hover {
+    text-decoration: none;
+    background: rgba(227, 237, 21, .5);
+}
+
+.discipline .tree:hover h2 {
+    color: white;
+}
+
+.explication {
+    border: 15px solid rgba(227, 237, 21, .75);
+    background-colr: #edede6;
+}
+
+.explication .eximag {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+}
+
+.explication .extext {
+    text-align: center;
+    color: black;
+    background-color: #fff;
+}
+
+.explication .extext h2 {
+    margin-top: 40px;
+}
+
+.explication .extext p {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .discipline .one .entete {
+        width: 90px;
+        height: 90px;
+        margin-top: 70px;
+    }
+
+    .discipline .one h2 {
+        font-size: 30px;
+    }
+
+    .discipline .one p {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .discipline .two .entete {
+        width: 90px;
+        height: 90px;
+        margin-top: 57px;
+    }
+
+    .discipline .two h2 {
+        font-size: 30px;
+    }
+
+    .discipline .two p {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .discipline .tree .entete {
+        width: 90px;
+        height: 90px;
+        margin-top: 70px;
+    }
+
+    .discipline .tree h2 {
+        font-size: 30px;
+    }
+
+    .discipline .tree p {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .discipline .one .entete {
+        width: 80px;
+        height: 80px;
+    }
+
+    .discipline .one h2 {
+        font-size: 30px;
+    }
+
+    .discipline .one p {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .discipline .two .entete {
+        width: 80px;
+        height: 80px;
+    }
+
+    .discipline .two h2 {
+        font-size: 30px;
+    }
+
+    .discipline .two p {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .discipline .tree .entete {
+        width: 80px;
+        height: 80px;
+    }
+
+    .discipline .tree h2 {
+        font-size: 30px;
+    }
+
+    .discipline .tree p {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+}
+
+.clubs {
+    min-height: 400px;
+    margin-top: -3%;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(150deg, rgba(227, 237, 21, .75) 51%, rgba(2, 2, 2, .8) 35%);
+}
+
+.clubs .lesclubs .ou h2 {
+    font-family: 'SFSportsNight';
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: right;
+}
+
+.clubs .lesclubs .ou p {
+    margin-right: 15%;
+    margin-left: 10%;
+}
+
+.clubs .ville {
+    color: #353535;
+}
+
+.clubs .ville h2 {
+    font-family: 'SFSportsNight';
+    margin-top: 10%;
+    margin-left: 15%;
+    text-align: left;
+}
+
+.clubs .ville p {
+    margin-right: 10%;
+    margin-bottom: 7%;
+    margin-left: 15%;
+    text-align: left;
+}
+
+.clubs .ville .club {
+    width: 200px;
+    height: 200px;
+    margin-left: 15%;
+}
+
+@media screen and (max-width: 768px) {
+    .clubs {
+        font-family: 'raleway_bold', Cambria, Cochin, Georgia, Times, serif;
+        font-size: 14px;
+    }
+
+    .clubs .lesclubs .ou h2 {
+        font-family: 'SFSportsNight';
+        margin-top: 10%;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .clubs .lesclubs .ou p {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .clubs .ville {
+        color: #fff;
+    }
+
+    .clubs .ville h2 {
+        margin-top: 10%;
+        margin-left: 0;
+        text-align: right;
+        text-align: center;
+    }
+
+    .clubs .ville p {
+        font-family: 'raleway', Cambria, Cochin, Georgia, Times, serif;
+        font-size: 12px;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+.deco {
+    width: 100%;
+    height: 180px;
+    margin-top: 70px;
+    background-color: rgba(53, 53, 53, .863);
+}
+
+.news {
+    font-family: 'Merriweather-Light';
+}
+
+.news .info1 {
+    height: 300px;
+}
+
+.news .info1 .info2 h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: #353535;
+}
+
+.news .info1 .info2 h1 span {
+    color: #eaf250;
+}
+
+.news .info1 .info2 p {
+    font-family: 'Merriweather-Light';
+    text-align: center;
+    color: #353535;
+}
+
+.news .derniere {
+    margin-top: -100px;
+}
+
+.news .derniere .derniere1 {
+    margin: 0;
+    padding: 0;
+}
+
+.news .derniere .derniere1 .une {
+    margin: 0;
+    margin-top: 30px;
+    margin-right: 0;
+    padding: 0;
+}
+
+.news .derniere .derniere1 .deux {
+    margin-top: 30px;
+    background-color: #f2f2f2;
+}
+
+.news .derniere .derniere1 .deux .one {
+    text-align: center;
+}
+
+.news .derniere .derniere1 .deux .one #date {
+    font-size: 12px;
+    padding-top: 20px;
+    color: grey;
+}
+
+.news .derniere .derniere1 .deux .two {
+    color: grey;
+}
+
+.news .derniere .derniere1 .deux .two .dif {
+    color: black;
+}
+
+@mport 'plus.scss';
+
+header {
+    height: 45vh;
+    background-color: white;
+    background-image: url(../../../img/course.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
