@@ -517,6 +517,63 @@ nav .bande .menu li:hover ul {
     }
 }
 
+.clubs {
+    min-height: 400px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #34adff;
+    background-image: -webkit-linear-gradient(150deg, rgba(246, 5, 2, .75) 51%, rgba(12, 12, 12, .863) 35%);
+}
+
+.clubs .lesclubs .ou h2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+
+.clubs .lesclubs .ou p {
+    margin-right: 15%;
+    margin-left: 10%;
+}
+
+.clubs .ville h2 {
+    margin-top: 10%;
+    margin-right: 10%;
+    text-align: right;
+}
+
+.clubs .ville p {
+    margin-right: 10%;
+    text-align: right;
+}
+
+.clubs .ville #club {
+    width: 200px;
+    height: 200px;
+    margin-left: 55%;
+    background-color: #c0c1c1;
+}
+
+@media screen and (max-width: 768px) {
+    .clubs .ville h2 {
+        margin-top: 10%;
+        margin-right: 10%;
+        text-align: right;
+    }
+
+    .clubs .ville p {
+        margin-right: 10%;
+        text-align: right;
+    }
+
+    .clubs .ville #club {
+        width: 200px;
+        height: 200px;
+        margin-left: 15%;
+        background-color: #c0c1c1;
+    }
+}
+
 header {
     height: 100vh;
     background-color: black;
